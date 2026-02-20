@@ -7,13 +7,33 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
 </head>
 <body>
     <!-- Header Content -->
-    <header></header>
+    <header>
+        <h1>To-do List-You</h1>
+    </header>
     
     <!-- Main content -->
-    <main></main>
+    <main>
+        <section>
+            <form>
+                <!--To-do Input-->
+                <input class="border p-2" type="text" id="To-do input" placeholder="Enter a new To-do item">
+
+                <!--Date Input-->
+                <input class="border p-2" type="text" id="To-do Date" placeholder="Enter due date">
+            </form>
+
+            <!--Add Button-->
+            <button class="bg-gray-500 hover:bg-gray-700 text-black font-bold py-2 px-4 rounded" rounded" type="button">Add To-do:D</button>
+        </section>
+    </main>
 
     <!-- Footer Content -->
     <footer></footer>
