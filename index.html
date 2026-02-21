@@ -16,7 +16,7 @@
 <body>
     <!-- Header Content -->
     <header>
-        <h1>To-do List-You</h1>
+        <h1 class="text-2xl font-semibold">⋆｡°✩To-do Listᶻ 𝗓 𐰁</h1>
     </header>
     
     <!-- Main content -->
@@ -24,22 +24,44 @@
         <section>
             <form>
                 <!--To-do Input-->
-                <input class="border p-2" type="text" id="To-do input" placeholder="Enter a new To-do item">
+                <input class="border p-2" type="text" id="todoInput" placeholder="Enter a new To-do item">
 
                 <!--Date Input-->
-                <input class="border p-2" type="text" id="To-do Date" placeholder="Enter due date">
+                <input class="border p-2" type="text" id="todoDate" placeholder="Enter due date">
             </form>
 
             <!--Add Button-->
-            <button class="bg-gray-500 hover:bg-gray-700 text-black font-bold py-2 px-4 rounded" rounded" type="button">Add To-do:D</button>
+            <button class="bg-gray-500 hover:bg-gray-700 text-black font-bold py-2 px-4 rounded" onclick="addTodo()" type="button">Add To-do:D</button>
         </section>
+
+        <!--Action Button-->
+        <section class="flex pt-2 justify-between">
+            <!--Clear All Button-->
+            <button class="border rounded p-2 bg-red-500 text-white font-bold" onclick="deleteTodos()">Clear All To-dos</button>
+
+            <!--Filter Option-->
+            <button class="border rounded p-2 bg-green-500 text-white font-bold" onclick="filterTodos()">Filter To-dos</button>
+        </section>
+
+        <!--To-do list section-->
+        <section class="pt-2">
+            <header>
+                <h1 class="text-2xl font-semibold">List of To-dos</h1>
+            </header>
+
+            <ul class="pt-2" id="to-do-list">
+                <!--To-do items will be dynamically added here-->
+                <li>No To-dos available</li>
+            </ul>
     </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <p class="text-center text-gray-500 text-sm mt-4">2026 Made w/love. All Rights Reserved.</p>
+    </footer>
     
     <!-- Javascript External -->
-    <script src="js/script.js"></script>
-    
+    <script src="js/script.js" defer></script>
+
 </body>
 </html>
